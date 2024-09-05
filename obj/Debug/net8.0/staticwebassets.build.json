@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WndDetmx5VXzLBhvx7juiAiNPgcuIJlk0h3K6ONcIVU=",
+  "Hash": "ybIf+ShQR5AVCB3IMZH/Y6RVxbZETeOpdCbtM3qmHks=",
   "Source": "PreguntadOrt",
   "BasePath": "_content/PreguntadOrt",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo.jfif"
+    },
+    {
+      "Identity": "Z:\\PreguntadOrt\\wwwroot\\img\\princi.png",
+      "SourceId": "PreguntadOrt",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\PreguntadOrt\\wwwroot\\",
+      "BasePath": "_content/PreguntadOrt",
+      "RelativePath": "img/princi.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\princi.png"
     },
     {
       "Identity": "Z:\\PreguntadOrt\\wwwroot\\js\\site.js",

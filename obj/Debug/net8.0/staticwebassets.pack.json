@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\img\\logo.jfif"
     },
     {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\princi.png",
+      "PackagePath": "staticwebassets\\img\\princi.png"
+    },
+    {
       "Id": "Z:\\PreguntadOrt\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
