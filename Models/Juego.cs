@@ -79,7 +79,10 @@ static public class Juego
         return Respuesta;
     }  
 
-
+    public int CantidadPreguntas()
+    {
+        return ListaPreguntas.count;
+    }
 
     
 
