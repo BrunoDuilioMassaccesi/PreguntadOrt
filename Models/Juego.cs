@@ -50,12 +50,12 @@ static public class Juego
         return ListaRespuestas;
     }
 
-    public static bool VerificarRespuesta (int IdRespuesta)
+    public static bool VerificarRespuesta (int Idrespuesta)
     {
         bool Respuesta = false;
         foreach (Respuesta rta in ListaRespuestas)
         {
-            if (Respuesta)
+            if (rta.IdRespuesta == Idrespuesta)
             {
                 Respuesta = true;
 
@@ -74,14 +74,16 @@ static public class Juego
                     CantCorrectas++;
 
             }
-            
-        }        
+        
+        }   
+        ContadorNroPreguntaActual++;
+        PreguntaActual = ListaPreguntas[ContadorNroPreguntaActual];
         return Respuesta;
     }  
 
-    public int CantidadPreguntas()
+    public static int CantidadPreguntas()
     {
-        return ListaPreguntas.count;
+        return ListaPreguntas.Count;
     }
 
     
