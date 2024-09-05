@@ -55,7 +55,7 @@ static public class Juego
         bool Respuesta = false;
         foreach (Respuesta rta in ListaRespuestas)
         {
-            if (rta.Correcta)
+            if (Respuesta)
             {
                 Respuesta = true;
 

@@ -1,23 +1,79 @@
-html {
-  font-size: 14px;
-  min-height: 100%;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
 
-body {
-  margin: 10px;
-  padding: 10px;
+
+header
+{
+  top: 0%;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 100px;
 }
-
-
 footer {
-  margin-top: 10px;
-  padding: 10px;
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
+}
+header img
+{
+  height: 45px;
+  margin-left: 15%;
+}
+.nav-item
+{
+  background-color: red;
+  margin-right: 6%;
+  margin-left: 4.5%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.nav-item
+{
+  font-weight:bold;
+}
+.nav-item:hover
+{
+  transition: background-color 2s ease;
+}
+.nav-item:hover
+{
+   background-color:#96305A;
+}
+.credito
+{
+  margin-top: 5%;
+  font-weight: bold;
+  background-color:#e51919;
+  padding: 0.6%;
+  margin-left: 42%;
+  margin-right: 42%;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.desarrollo
+{
+  font-style: italic;
+  font-weight: bold;
+  background-color:#e51919;
+  padding: 0.6%;
+  margin-left: 43.5%;
+  margin-right: 43.5%;
+  border: 0.5px solid black;
+  border-radius: 10px;
+}
+.card-img-top
+{
+  height: 350px;
+}
+.col
+{
+  margin-left: 12.5%;
+}
+.footer
+{
+  text-align: center;
+  margin-top: 10%;
+  padding: 10px;
 }
