@@ -32,4 +32,15 @@ public class HomeController : Controller
         Juego.CargarPartida(username, dificultad, categoria);
         return RedirectToAction("Jugar");
     }
+
+    public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
+    {
+        ViewBag.EsCorrecta = Juego.VerificarRespuesta(idRespuesta);
+        ViewBag.Correcta = Juego.ObtenerCorrecta();
+        return View("Respuesta");
+    }
+
+
+
+
 }
