@@ -1,0 +1,14 @@
+<form Action='@Url.ActionLink("Jugar", "Home")'>
+    @foreach (Categoria item in ViewBag.ListaCategorias)
+    {
+        <input type="radio" name="nombre" value="cate" > @item.Nombre  
+    }
+</form>
+<form Action='@Url.ActionLink("Jugar", "Home")'>
+    @foreach (Dificultad item in ViewBag.ListaDificultades)
+    { 
+        <input type="radio" name="nombre" value="cate"  > @item.Nombre
+    }
+
+        <input type="submit" value="Jugar" >
+</form>
