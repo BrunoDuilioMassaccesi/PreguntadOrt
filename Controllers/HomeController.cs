@@ -17,6 +17,12 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult ConfigurarJuego()
+    {
+        ViewBag.Bd.ObtenerCategorias;
+        ViewBag.Bd.ObtenerDificultades;
+        return View();
+    }
     public IActionResult Creditos()
     {
         return View();
