@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\bruno.jpeg",
+      "PackagePath": "staticwebassets\\img\\bruno.jpeg"
+    },
+    {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\ghelman.jpeg",
+      "PackagePath": "staticwebassets\\img\\ghelman.jpeg"
+    },
+    {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\logo.jfif",
+      "PackagePath": "staticwebassets\\img\\logo.jfif"
+    },
+    {
       "Id": "Z:\\PreguntadOrt\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
