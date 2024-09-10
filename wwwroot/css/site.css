@@ -167,6 +167,31 @@ input[type="radio"] {
   margin-bottom: 10px;
   display: block;
 }
+.bien
+{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.catsele
+{
+  text-align: center;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.difisele
+{
+  text-align: center;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.enviarConfig
+{
+  margin-top: 15%;
+}
+
+
+
 
 
 
