@@ -73,14 +73,18 @@ static public class Juego
                     }
                     CantCorrectas++;
 
+
             }
+            return Respuesta;
+
         
         }   
         ContadorNroPreguntaActual++;
         PreguntaActual = ListaPreguntas[ContadorNroPreguntaActual];
         return Respuesta;
-    }  
 
+
+    }  
     public static int CantidadPreguntas()
     {
         return ListaPreguntas.Count;

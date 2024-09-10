@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\Thumbs.db",
+      "PackagePath": "staticwebassets\\img\\Thumbs.db"
+    },
+    {
       "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\bruno.jpeg",
       "PackagePath": "staticwebassets\\img\\bruno.jpeg"
     },

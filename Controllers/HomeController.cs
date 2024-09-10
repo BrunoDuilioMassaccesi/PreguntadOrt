@@ -26,12 +26,13 @@ public class HomeController : Controller
      public IActionResult Comenzar(string username, int dificultad, int categoria)
     {
         Juego.CargarPartida(username, dificultad, categoria);
-        return RedirectToAction("Comenzar");
+        return View("Comenzar");
     }
     public IActionResult Jugar()
     {
         if (Juego.CantidadPreguntas()>0)
         {
+            int idPregunta = 0;
             ViewBag.ListaPregunta = Juego.ObtenerProximaPregunta();        
             ViewBag.ListaRespuesta = Juego.ObtenerProximasRespuestas(idPregunta);       
                  
@@ -42,17 +43,15 @@ public class HomeController : Controller
             return View("Fin");
         }
     }
-    public IActionResult Creditos()
-    {
-        return View();
-    }
-
-
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
     {
         ViewBag.EsCorrecta = Juego.VerificarRespuesta(idRespuesta);
-        ViewBag.Correcta = Juego.Respuesta();
+        ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
         return View("Respuesta");
+    }
+        public IActionResult Creditos()
+    {
+        return View();
     }
 
 }
