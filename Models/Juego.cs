@@ -85,7 +85,6 @@ static public class Juego
 
 
     }  
-
     public static int CantidadPreguntas()
     {
         return ListaPreguntas.Count;
