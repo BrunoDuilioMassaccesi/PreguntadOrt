@@ -23,24 +23,37 @@ public class HomeController : Controller
         ViewBag.ListaDificultades = Juego.ObtenerDificultades();
         return View();
     }
+     public IActionResult Comenzar(string username, int dificultad, int categoria)
+    {
+        Juego.CargarPartida(username, dificultad, categoria);
+        return RedirectToAction("Comenzar");
+    }
+    public IActionResult Jugar()
+    {
+        if (Juego.CantidadPreguntas()>0)
+        {
+            int idPregunta = 0;
+            ViewBag.ListaPregunta = Juego.ObtenerProximaPregunta();        
+            ViewBag.ListaRespuesta = Juego.ObtenerProximasRespuestas(idPregunta);       
+                 
+            return View();
+        }
+        else
+        {
+            return View("Fin");
+        }
+    }
     public IActionResult Creditos()
     {
         return View();
     }
-        public IActionResult Comenzar(string username, int dificultad, int categoria)
-    {
-        Juego.CargarPartida(username, dificultad, categoria);
-        return RedirectToAction("Jugar");
-    }
+
 
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
     {
         ViewBag.EsCorrecta = Juego.VerificarRespuesta(idRespuesta);
-        ViewBag.Correcta = Juego.ObtenerCorrecta();
+        ViewBag.Correcta = Juego.Respuesta();
         return View("Respuesta");
     }
-
-
-
 
 }
