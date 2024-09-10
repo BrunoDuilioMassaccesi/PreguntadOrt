@@ -26,6 +26,9 @@ public class HomeController : Controller
      public IActionResult Comenzar(string username, int dificultad, int categoria)
     {
         Juego.CargarPartida(username, dificultad, categoria);
+        ViewBag.Username=username;
+        ViewBag.Dificultad=dificultad;
+        ViewBag.Categoria=categoria;
         return View("Comenzar");
     }
     public IActionResult Jugar()

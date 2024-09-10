@@ -1,14 +1,14 @@
-<form Action='@Url.ActionLink("Comenzar", "Home")'>
+<form class="formConfig"  Action='@Url.ActionLink("Comenzar", "Home")'>
     @foreach (Categoria item in ViewBag.ListaCategorias)
     {
-        <input type="radio" name="categoria" value="cate" > @item.Nombre  
+        <input lass="ncategoria" type="radio" name="categoria" value="@item.IdCategoria" > @item.Nombre  
     }
     @foreach (Dificultad item in ViewBag.ListaDificultades)
     { 
-        <input type="radio" name="dificultad" value="cate"  > @item.Nombre
+        <input class="ndificultad" type="radio" name="dificultad" value="@item.IdDificultad"  > @item.Nombre
     }
-       <input type="text" name="username" placeholder="Nombre de Usuario:" > 
-       
+    <input type="text" name="username" placeholder="Nombre de Usuario:" > 
+        
 
-        <input type="submit" value="Jugar" >
+        <input class="enviarConfig" type="submit" value="Jugar" >
 </form>
