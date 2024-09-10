@@ -2,10 +2,11 @@
     ViewData["Title"] = "Comenzar";
 }
 
-    @foreach(Pregunta pre in ViewBag.ListaPregunta)
-{
 
+  
+    @foreach(Juego item in ViewBag.ListaPreguntas) 
+{
+<h2>¡Bienvenido @ViewBag.username</h2> 
+<p>Categoría seleccionada: @item.dificultad</p>
+<p>Dificultad seleccionada: @item.categoria</p>
 }   
-<h2>¡ Bienvenido @ViewBag.NombreJugador!</h2>
-<p>Categoría seleccionada: @ViewBag.IdCategoria</p>
-<p>Dificultad seleccionada: @ViewBag.IdDificultad</p>
