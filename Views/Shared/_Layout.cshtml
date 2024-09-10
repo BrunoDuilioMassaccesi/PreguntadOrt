@@ -20,9 +20,6 @@
                     <li class="fotologo">
                     <a class="navbar-brand" href='@Url.ActionLink("Index", "Home")'><img src="../img/logo.jfif"></a>
                     </li>
-                    <li class="configjuego">
-                    <a class="navbar-brand" href='@Url.Action("ConfigurarJuego", "Home")'>ConfigurarJuego</a>
-                    </li>
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href='@Url.ActionLink("Historia", "Home")'>Jugar</a>
                     </li>
@@ -47,7 +44,7 @@
 
 
     <footer class="footer" >
-        &copy; 0 @DateTime.Now.Day / 0 @DateTime.Now.Month / @DateTime.Now.Year - Preguntad Ort
+        &copy; @DateTime.Now.Day / @DateTime.Now.Month / @DateTime.Now.Year - Preguntad Ort
     </footer>
 
 
