@@ -33,11 +33,12 @@ public class HomeController : Controller
     }
     public IActionResult Jugar()
     {
+        ViewBag.Username=Juego.Usuario;
         if (Juego.CantidadPreguntas()>0)
         {
-            int idPregunta = 0;
-            ViewBag.ListaPregunta = Juego.ObtenerProximaPregunta();        
-            ViewBag.ListaRespuesta = Juego.ObtenerProximasRespuestas(idPregunta);       
+        
+            ViewBag.Pregunta = Juego.ObtenerProximaPregunta();        
+            ViewBag.ListaRespuestas = Juego.ObtenerProximasRespuestas(ViewBag.Pregunta.IdPregunta);       
                  
             return View();
         }
@@ -49,7 +50,9 @@ public class HomeController : Controller
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
     {
         ViewBag.EsCorrecta = Juego.VerificarRespuesta(idRespuesta);
+        ViewBag.PuntajeActual=Juego.PuntajeActual;
         ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
+        
         return View("Respuesta");
     }
         public IActionResult Creditos()

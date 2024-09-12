@@ -5,13 +5,13 @@ public class Respuesta
     public int IdPregunta {get;set;}
     public int Opcion {get;set;}
     public string Contenido {get;set;}
-    public char Correcta {get;set;}
+    public bool Correcta {get;set;}
     public string Foto {get;set;}
 
 
     public Respuesta () {}
 
-    public Respuesta (int idrespuesta, int idpregunta, int opcion, string contenido, char correcta, string foto)
+    public Respuesta (int idrespuesta, int idpregunta, int opcion, string contenido, bool correcta, string foto)
     {
         IdRespuesta = idrespuesta;
         IdPregunta = idpregunta;

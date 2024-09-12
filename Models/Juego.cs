@@ -2,8 +2,8 @@ namespace PreguntadOrt;
 
 static public class Juego
 {
-    static private string Usuario;
-    static private int PuntajeActual;
+    static public string Usuario;
+    static public int PuntajeActual;
     static private int CantCorrectas;
     static private int ContadorNroPreguntaActual;
     static private Pregunta PreguntaActual;
@@ -85,6 +85,10 @@ static public class Juego
 
 
     }  
+    public static int ObtenerPuntaje(int PuntajeActual)
+    {
+        return PuntajeActual;
+    }
     public static int CantidadPreguntas()
     {
         return ListaPreguntas.Count;
