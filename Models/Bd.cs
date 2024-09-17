@@ -67,5 +67,18 @@ static public class BD
         return Lista;
     }
 
+    public static string CualEsCorrecta(int idPregunta)
+    {
+        string correcta=null;
+         string sql = "SELECT * FROM Respuestas  WHERE Correcta = 1 and IdPregunta = @pId";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            correcta = db.Query<string>(sql, new{pId = idPregunta}).FirstOrDefault();
+        }       
+        return correcta;
+    }
+
+    
+
 
 }

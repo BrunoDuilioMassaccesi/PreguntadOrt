@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\Respuesta correcta.png",
+      "PackagePath": "staticwebassets\\img\\Respuesta correcta.png"
+    },
+    {
+      "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\Respuesta incorrecta.png",
+      "PackagePath": "staticwebassets\\img\\Respuesta incorrecta.png"
+    },
+    {
       "Id": "Z:\\PreguntadOrt\\wwwroot\\img\\Thumbs.db",
       "PackagePath": "staticwebassets\\img\\Thumbs.db"
     },

@@ -52,12 +52,12 @@ static public class Juego
 
     public static bool VerificarRespuesta (int Idrespuesta)
     {
-        bool Respuesta = false;
+        bool Respuestas = false;
         foreach (Respuesta rta in ListaRespuestas)
         {
             if (rta.IdRespuesta == Idrespuesta)
             {
-                Respuesta = true;
+                Respuestas = true;
 
                     if(PreguntaActual.IdDificultad == 1)
                     {
@@ -75,13 +75,10 @@ static public class Juego
 
 
             }
-            return Respuesta;
-
-        
         }   
         ContadorNroPreguntaActual++;
         PreguntaActual = ListaPreguntas[ContadorNroPreguntaActual];
-        return Respuesta;
+        return Respuestas;
 
 
     }  
@@ -92,6 +89,13 @@ static public class Juego
     public static int CantidadPreguntas()
     {
         return ListaPreguntas.Count;
+    }
+
+    public static string RespuestaCorrecta(int idPregunta)
+    {
+        string Respuesta=null;
+        Respuesta=BD.CualEsCorrecta(idPregunta);
+        return Respuesta;
     }
 
     
